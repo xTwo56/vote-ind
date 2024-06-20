@@ -16,8 +16,8 @@ enum Party {
 }
 
 enum Time {
-  Years,
   Days,
+  Weeks,
   Hours,
   Minutes,
   Seconds
@@ -26,6 +26,6 @@ enum Time {
 enum Sex {
   Male, 
   Female,
-  Non-Binary,
+  NonBinary,
   ChowmeinWithChilliPotato
 }

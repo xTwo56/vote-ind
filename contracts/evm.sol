@@ -11,7 +11,7 @@ contract EVM is Initializable {
 
   uint votingStartTime ;
   uint votingEndTime ;
-  bool electionStatus = false;
+  bool electionStatus ;
 
   struct Profile {
     string name ;
@@ -51,7 +51,10 @@ contract EVM is Initializable {
 
   function initialize() public initializer {
     admin = owner = msg.sender;
-
+    electionStatus = false;
+    totalVotes[Party.AAP] = 0;
+    totalVotes[Party.BJP] = 0;
+    totalVotes[Party.Congress] = 0;
   } 
 
   function setAdmin(address _admin) external {
