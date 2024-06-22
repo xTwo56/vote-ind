@@ -29,3 +29,8 @@ enum Sex {
   NonBinary,
   ChowmeinWithChilliPotato
 }
+
+enum Voter {
+  IndividualVoter, 
+  ProviderVoter
+}
