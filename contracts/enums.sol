@@ -30,7 +30,7 @@ enum Sex {
   ChowmeinWithChilliPotato
 }
 
-enum Voter {
+enum Votertype {
   IndividualVoter, 
   ProviderVoter
 }
