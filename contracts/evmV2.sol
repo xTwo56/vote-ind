@@ -134,4 +134,7 @@ contract EVMv2 is Initializable {
     return totalVotes[Party.AAP]+totalVotes[Party.BJP]+totalVotes[Party.Congress];
   }
 
+  function checkVersion()public pure returns(uint){
+    return 2;
+  }
 }

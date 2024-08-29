@@ -118,6 +118,10 @@ contract EVM is Initializable {
   function getTotalVotes()public view returns(uint){
     return totalVotes[Party.AAP]+totalVotes[Party.BJP]+totalVotes[Party.Congress];
   }
+
+  function checkVersion()public pure returns(uint){
+    return 1;
+  }
 }
 
 
